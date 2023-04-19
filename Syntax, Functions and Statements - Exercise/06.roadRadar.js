@@ -10,15 +10,15 @@ function roadRadar(speed, area) {
         case "city": limit = 50; break;
         case "residential": limit = 20; break;
     }
-    let exceededSpeed=speed-limit;
-    if(exceededSpeed<=0){
+    let exceededSpeed = speed - limit;
+    if (exceededSpeed <= 0) {
         console.log(`Driving ${speed} km/h in a ${limit} zone`);
-    }else{
-        let status="reckless driving";
-        if(exceededSpeed<=20){
-            status="speeding";
-        }else if(exceededSpeed<=40){
-            status="excessive speeding";
+    } else {
+        let status = "reckless driving";
+        if (exceededSpeed <= 20) {
+            status = "speeding";
+        } else if (exceededSpeed <= 40) {
+            status = "excessive speeding";
         }
         console.log(`The speed is ${exceededSpeed} km/h faster than the allowed speed of ${limit} - ${status}`);
     }
