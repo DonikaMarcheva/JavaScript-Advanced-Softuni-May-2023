@@ -7,6 +7,9 @@ describe('PaymentPachage class',()=>{
         let paymentObj=new PaymentPackage('a',1);
         it('Should return "a" for name argument',()=>{
             expect(paymentObj.name).to.equal('a')
+            paymentObj.name='b';
+            expect(paymentObj.name).to.equal('b')
+
         })
         it('Should return 1 for "value" argument',()=>{
             expect(paymentObj.value).to.equal(1)
@@ -75,7 +78,7 @@ describe('PaymentPachage class',()=>{
             paymentObj.active=false;
             let expectedMessage=[
                 'Package: a (inactive)',
-                '- Value (excl. VAT): ',
+                '- Value (excl. VAT): 5',
                 '- Value (VAT 20%): 6'
             ];;
             expect(paymentObj.toString()).to.equal(expectedMessage.join('\n'))
