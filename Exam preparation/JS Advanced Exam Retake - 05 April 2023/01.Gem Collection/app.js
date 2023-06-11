@@ -33,7 +33,7 @@ function solve() {
             pCaratsEl.textContent = `Carats: ${caratsInputField.value}`;
 
             let pPriceEl = document.createElement('p');
-            pPriceEl.textContent = `Price: ${priceInputField.value} $`;
+            pPriceEl.textContent = `Price: ${priceInputField.value}$`;
 
             let pTypeEl = document.createElement('p');
             pTypeEl.textContent = `Type: ${typeInputField.value}`;
