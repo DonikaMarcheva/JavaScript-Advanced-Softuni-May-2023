@@ -29,7 +29,7 @@ function next(e){
                 li.classList.add('part-content');
                 let article=createElements('article');
                 let p1=createElements('p',`Car Model: ${carModelValue}`);
-                let p2=createElements('p',`Car year: ${carYearValue}`);
+                let p2=createElements('p',`Car Year: ${carYearValue}`);
                 let p3=createElements('p',`Part Name: ${partNameValue}`);
                 let p4=createElements('p',`Part Number: ${partNumberValue}`);
                 let p5= createElements('p',`Condition: ${conditionValue}`);
